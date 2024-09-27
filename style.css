@@ -5,20 +5,22 @@ body {
     height: 100vh;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+    /* background:rgb(86, 145, 168); */
+    background-image: url('bg_image.jpg');
+    background-size: 100%;
     font-size: 120%;
 }
 
 .card {
-    background: rgba(255, 255, 255, 0.8);
-    color: #333;
+    background: linear-gradient(130deg, rgba(255, 255, 255, 0.8), rgba(135, 206, 235, 0.8)); /* Transparent gradient */
+    color: black;
     padding: 2em;
     border-radius: 30px;
     width: 100%;
     max-width: 420px;
     margin: 1em;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
 
 .search {
     display: flex;
@@ -33,11 +35,10 @@ button {
     height: 44px;
     width: 44px;
     outline: none;
-    background: #4e91e6;
+    background: #7c7c7c2b;
     color: white;
     cursor: pointer;
-    transition: 0.3s ease-in-out;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.2s ease-in-out;
 }
 
 input.search-bar {
@@ -45,45 +46,54 @@ input.search-bar {
     outline: none;
     padding: 0.4em 1em;
     border-radius: 24px;
-    background: rgba(255, 255, 255, 0.6);
-    color: #333;
+    background: #7c7c7c2b;
+    color: black;
     font-family: inherit;
     font-size: 105%;
     width: calc(100% - 100px);
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
-    background: #366db3;
+    background: #7c7c7c6b;
 }
 
 h1.temp {
     margin: 0;
     margin-bottom: 0.4em;
-    color: #333;
 }
 
 .flex {
     display: flex;
     align-items: center;
+    
+}
+
+.detail {
+    margin-top: 1em;
+}
+
+.detail i {
+    margin-right: 8px;
+    font-size: 1.5em;
+    color: #ddd;
 }
 
 .description {
     text-transform: capitalize;
     margin-left: 8px;
-    color: #555;
 }
 
 .weather.loading {
     visibility: hidden;
     max-height: 20px;
     position: relative;
+
 }
 
 .weather.loading:after {
     visibility: visible;
     content: "Loading...";
-    color: #555;
+    color: white;
     position: absolute;
     top: 0;
     left: 20px;
