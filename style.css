@@ -5,82 +5,86 @@ body {
     height: 100vh;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    background: #222;
-    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
     font-size: 120%;
 }
-  
-  .card {
-    background: #000000d0;
-    color: white;
+
+.card {
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
     padding: 2em;
     border-radius: 30px;
     width: 100%;
     max-width: 420px;
     margin: 1em;
-  }
-  
-  .search {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.search {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  button {
+}
+
+button {
     margin: 0.5em;
     border-radius: 50%;
     border: none;
     height: 44px;
     width: 44px;
     outline: none;
-    background: #7c7c7c2b;
+    background: #4e91e6;
     color: white;
     cursor: pointer;
-    transition: 0.2s ease-in-out;
-  }
-  
-  input.search-bar {
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input.search-bar {
     border: none;
     outline: none;
     padding: 0.4em 1em;
     border-radius: 24px;
-    background: #7c7c7c2b;
-    color: white;
+    background: rgba(255, 255, 255, 0.6);
+    color: #333;
     font-family: inherit;
     font-size: 105%;
     width: calc(100% - 100px);
-  }
-  
-  button:hover {
-    background: #7c7c7c6b;
-  }
-  
-  h1.temp {
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: #366db3;
+}
+
+h1.temp {
     margin: 0;
     margin-bottom: 0.4em;
-  }
-  
-  .flex {
+    color: #333;
+}
+
+.flex {
     display: flex;
     align-items: center;
-  }
-  
-  .description {
+}
+
+.description {
     text-transform: capitalize;
     margin-left: 8px;
-  }
-  
-  .weather.loading {
+    color: #555;
+}
+
+.weather.loading {
     visibility: hidden;
     max-height: 20px;
     position: relative;
-  }
-  
-  .weather.loading:after {
+}
+
+.weather.loading:after {
     visibility: visible;
     content: "Loading...";
-    color: white;
+    color: #555;
     position: absolute;
     top: 0;
     left: 20px;
-  }
+}
