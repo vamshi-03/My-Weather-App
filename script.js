@@ -1,6 +1,6 @@
 let weather = {
-    apiKey: "7e005368a65cea464e260edb850d7ca1", // OpenWeatherMap API key
-    imageApiKey: "46216957-8719dbb8db15120c5197a0e8e", // Replace with your Pixabay API key
+    apiKey: "7e005368a65cea464e260edb850d7ca1", 
+    imageApiKey: "46216957-8719dbb8db15120c5197a0e8e", 
     fetchWeather: function (city) {
         fetch(
             "https://api.openweathermap.org/data/2.5/weather?q=" +
@@ -35,7 +35,7 @@ let weather = {
             "Wind speed: " + speed + " km/h";
         document.querySelector(".weather").classList.remove("loading");
 
-        // Fetch the background image from Pixabay
+        
         this.fetchBackgroundImage(name);
     },
     fetchBackgroundImage: function (city) {
@@ -53,7 +53,7 @@ let weather = {
                 document.body.style.backgroundImage = `url('${randomImage}')`;
             } else {
                 console.log("No images found for", city);
-                document.body.style.backgroundImage = `url('default-background.jpg')`;
+                document.body.style.backgroundImage = `url('bg_image.jpg')`;
             }
         })
         .catch((error) => {
